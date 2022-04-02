@@ -4322,14 +4322,14 @@ dependencies = [
 
 [[package]]
 name = "metrics-tracing-context"
-version = "0.9.0"
+version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7927d28bccc322a3f48fc445bffe7cb491ab8a43ea28f7c5f75bc16fc4e5d6bd"
+checksum = "487300885ada4d795d6517eaa13fbf15422241bd78ecb6a38760138b639941c1"
 dependencies = [
- "itoa 0.4.8",
+ "itoa 1.0.1",
  "lockfree-object-pool",
- "metrics 0.17.1",
- "metrics-util 0.10.2",
+ "metrics 0.18.1",
+ "metrics-util 0.11.1",
  "once_cell",
  "tracing 0.1.32",
  "tracing-core 0.1.23",
@@ -4343,7 +4343,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1174223789e331d9d47a4a953dac36e397db60fa8d2a111ac505388c6c7fe32e"
 dependencies = [
  "ahash",
- "aho-corasick",
  "atomic-shim",
  "crossbeam-epoch",
  "crossbeam-utils",
@@ -4351,6 +4350,26 @@ dependencies = [
  "hashbrown 0.11.2",
  "indexmap",
  "metrics 0.17.1",
+ "num_cpus",
+ "ordered-float",
+ "parking_lot 0.11.2",
+ "quanta",
+ "sketches-ddsketch",
+]
+
+[[package]]
+name = "metrics-util"
+version = "0.11.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0296c9cffd3d72c61d8fcd25efc381fd589f7b155a81f2fa5670010430f60c57"
+dependencies = [
+ "aho-corasick",
+ "atomic-shim",
+ "crossbeam-epoch",
+ "crossbeam-utils",
+ "hashbrown 0.11.2",
+ "indexmap",
+ "metrics 0.18.1",
  "num_cpus",
  "ordered-float",
  "parking_lot 0.11.2",
