@@ -2535,7 +2535,7 @@ dependencies = [
  "memchr",
  "metrics",
  "opentelemetry-proto",
- "ordered-float 4.6.0",
+ "ordered-float 5.1.0",
  "pin-project",
  "prost 0.12.6",
  "prost-reflect",
@@ -3950,12 +3950,12 @@ dependencies = [
 
 [[package]]
 name = "evmap"
-version = "11.0.0"
+version = "10.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1b8874945f036109c72242964c1174cf99434e30cfa45bf45fedc983f50046f8"
+checksum = "6e3ea06a83f97d3dc2eb06e51e7a729b418f0717a5558a5c870e3d5156dc558d"
 dependencies = [
  "hashbag",
- "left-right",
+ "slab",
  "smallvec",
 ]
 
@@ -4395,21 +4395,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "generator"
-version = "0.8.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "52f04ae4152da20c76fe800fa48659201d5cf627c5149ca0b707b69d7eef6cf9"
-dependencies = [
- "cc",
- "cfg-if",
- "libc",
- "log",
- "rustversion",
- "windows-link 0.2.0",
- "windows-result",
-]
-
-[[package]]
 name = "generic-array"
 version = "0.14.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4507,7 +4492,7 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "simpl",
- "smpl_jwt 0.8.0",
+ "smpl_jwt",
  "time",
  "tokio",
 ]
@@ -6195,17 +6180,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "left-right"
-version = "0.11.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0f0c21e4c8ff95f487fb34e6f9182875f42c84cef966d29216bf115d9bba835a"
-dependencies = [
- "crossbeam-utils",
- "loom",
- "slab",
-]
-
-[[package]]
 name = "lexical-core"
 version = "1.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -6462,19 +6436,6 @@ dependencies = [
  "prost 0.12.6",
  "prost-build 0.12.6",
  "prost-types 0.12.6",
-]
-
-[[package]]
-name = "loom"
-version = "0.7.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "419e0dc8046cb947daa77eb95ae174acfbddb7673b4151f56d1eed8e93fbfaca"
-dependencies = [
- "cfg-if",
- "generator",
- "scoped-tls",
- "tracing 0.1.44",
- "tracing-subscriber",
 ]
 
 [[package]]
@@ -7696,7 +7657,7 @@ dependencies = [
  "chrono",
  "glob",
  "hex",
- "ordered-float 4.6.0",
+ "ordered-float 5.1.0",
  "prost 0.12.6",
  "prost-build 0.12.6",
  "tonic 0.11.0",
@@ -7726,6 +7687,15 @@ name = "ordered-float"
 version = "4.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7bb71e1b3fa6ca1c61f383464aaf2bb0e2f8e772a1f01d486832464de363b951"
+dependencies = [
+ "num-traits",
+]
+
+[[package]]
+name = "ordered-float"
+version = "5.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7f4779c6901a562440c3786d08192c6fbda7c1c2060edd10006b05ee35d10f2d"
 dependencies = [
  "num-traits",
 ]
@@ -10479,22 +10449,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "smpl_jwt"
-version = "0.9.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a45432dc6b645c982d4ef68966b4507fb57d98ca67289df780cd7ca4a4369f5e"
-dependencies = [
- "base64 0.22.1",
- "log",
- "openssl",
- "serde",
- "serde_derive",
- "serde_json",
- "simpl",
- "time",
-]
-
-[[package]]
 name = "snafu"
 version = "0.7.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -12650,7 +12604,7 @@ dependencies = [
  "openssl",
  "openssl-probe",
  "openssl-src",
- "ordered-float 4.6.0",
+ "ordered-float 5.1.0",
  "paste",
  "percent-encoding",
  "pin-project",
@@ -12688,7 +12642,7 @@ dependencies = [
  "serial_test",
  "similar-asserts",
  "smallvec",
- "smpl_jwt 0.9.0",
+ "smpl_jwt",
  "snafu 0.8.9",
  "snap",
  "socket2 0.5.10",
@@ -12780,7 +12734,7 @@ dependencies = [
  "metrics-tracing-context",
  "metrics-util",
  "num-traits",
- "ordered-float 4.6.0",
+ "ordered-float 5.1.0",
  "paste",
  "proptest",
  "quickcheck",
@@ -12923,7 +12877,7 @@ dependencies = [
  "no-proxy",
  "noisy_float",
  "openssl",
- "ordered-float 4.6.0",
+ "ordered-float 5.1.0",
  "parking_lot 0.12.5",
  "pin-project",
  "proptest",
