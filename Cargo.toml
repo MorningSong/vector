@@ -429,7 +429,7 @@ socket2.workspace = true
 sqlx = { version = "0.8.6", default-features = false, features = ["derive", "postgres", "chrono", "runtime-tokio", "tls-rustls-ring"], optional = true }
 stream-cancel = { version = "0.8.2", default-features = false }
 strip-ansi-escapes = { version = "0.2.1", default-features = false }
-syslog = { version = "6.1.1", default-features = false, optional = true }
+syslog = { version = "7.0.0", default-features = false, optional = true }
 tikv-jemallocator = { version = "0.6.0", default-features = false, features = ["unprefixed_malloc_on_supported_platforms"], optional = true }
 tokio-postgres = { version = "0.7.13", default-features = false, features = ["runtime", "with-chrono-0_4"], optional = true }
 tokio-tungstenite = { workspace = true, features = ["connect"], optional = true }
