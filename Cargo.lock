@@ -1577,7 +1577,6 @@ dependencies = [
  "rustversion",
  "serde",
  "sync_wrapper 0.1.2",
- "tokio",
  "tower 0.4.13",
  "tower-layer",
  "tower-service",
@@ -1622,6 +1621,7 @@ dependencies = [
  "http 1.3.1",
  "http-body 1.0.1",
  "http-body-util",
+ "hyper-util",
  "itoa",
  "matchit 0.8.4",
  "memchr",
@@ -1630,6 +1630,7 @@ dependencies = [
  "pin-project-lite",
  "serde_core",
  "sync_wrapper 1.0.2",
+ "tokio",
  "tower 0.5.3",
  "tower-layer",
  "tower-service",
@@ -2576,7 +2577,7 @@ version = "3.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "faf9468729b8cbcea668e36183cb69d317348c2e08e994829fb56ebfdfbaac34"
 dependencies = [
- "windows-sys 0.61.0",
+ "windows-sys 0.48.0",
 ]
 
 [[package]]
@@ -3530,7 +3531,7 @@ dependencies = [
  "libc",
  "option-ext",
  "redox_users 0.5.0",
- "windows-sys 0.61.0",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -9783,7 +9784,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys 0.12.1",
- "windows-sys 0.61.0",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -11325,7 +11326,7 @@ dependencies = [
  "getrandom 0.4.2",
  "once_cell",
  "rustix 1.1.4",
- "windows-sys 0.61.0",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -12726,7 +12727,7 @@ dependencies = [
  "aws-smithy-runtime-api",
  "aws-smithy-types",
  "aws-types",
- "axum 0.6.20",
+ "axum 0.8.9",
  "azure_core",
  "azure_identity",
  "azure_storage_blob",
